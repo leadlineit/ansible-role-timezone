@@ -2,4 +2,5 @@
 - name: Set system timezone
   community.general.timezone:
     name: "{{ item }}"
-  with_items: "{{ timezone }}"
+  with_items:
+    - "{{ timezone }}"
